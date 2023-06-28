@@ -1,3 +1,10 @@
+import { NavBar } from "../components/NavBar";
+
 export const Contacts = () => {
-  return <div>Contacts</div>;
+  return (
+    <div>
+      <NavBar />
+      Contacts
+    </div>
+  );
 };

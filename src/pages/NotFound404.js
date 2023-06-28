@@ -1,3 +1,10 @@
+import { NavBar } from "../components/NavBar";
+
 export const NotFound404 = () => {
-  return <div>NotFound404</div>;
+  return (
+    <div>
+      <NavBar />
+      NotFound404
+    </div>
+  );
 };

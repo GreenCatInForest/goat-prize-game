@@ -1,3 +1,10 @@
+import { NavBar } from "../components/NavBar";
+
 export const Game = () => {
-  return <div>Game</div>;
+  return (
+    <div>
+      <NavBar />
+      Game
+    </div>
+  );
 };
