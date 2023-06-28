@@ -1,3 +1,3 @@
 export const Game = () => {
-  <div>Game</div>;
+  return <div>Game</div>;
 };

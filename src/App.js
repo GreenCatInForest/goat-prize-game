@@ -4,9 +4,7 @@ import { AppRoutes } from "./AppRoutes";
 export const App = () => {
   return (
     <BrowserRouter>
-      <div>
-        <AppRoutes />
-      </div>
+      <AppRoutes />
     </BrowserRouter>
   );
 };
