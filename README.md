@@ -1,3 +1,11 @@
+# Goats and Prizes
+
+## A game based on Monty Hill Paradox
+
+### Wireframe
+
+The project wireframe is [here](https://miro.com/app/board/uXjVM6rWqeM=/?share_link_id=240764868765).
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
