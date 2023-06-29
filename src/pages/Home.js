@@ -3,6 +3,7 @@ import Image from "mui-image";
 import { Button } from "@mui/material";
 
 import { NavBar } from "../components/NavBar";
+import { Footer } from "../components/Footer";
 import goatFrontView from "../images/goatFrontView.jpg";
 
 export const Home = () => {
@@ -23,6 +24,7 @@ export const Home = () => {
       >
         Play
       </Button>
+      <Footer />
     </div>
   );
 };
