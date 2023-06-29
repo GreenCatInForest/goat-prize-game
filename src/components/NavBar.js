@@ -53,7 +53,7 @@ export const NavBar = () => {
         </Tooltip>
         <Typography
           onClick={() => {
-            navigate("/");
+            navigate("/game");
           }}
           sx={{
             width: "100%",
@@ -67,7 +67,7 @@ export const NavBar = () => {
             },
           }}
         >
-          About
+          Play
         </Typography>
         <Typography
           sx={{
@@ -144,6 +144,9 @@ export const NavBar = () => {
           </IconButton>
         </Tooltip>
         <Typography
+          onClick={() => {
+            navigate("/game");
+          }}
           sx={{
             minWidth: 100,
             py: 1,
@@ -156,7 +159,7 @@ export const NavBar = () => {
             },
           }}
         >
-          About
+          Play
         </Typography>
         <Typography
           sx={{
