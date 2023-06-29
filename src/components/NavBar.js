@@ -24,17 +24,75 @@ export const NavBar = () => {
           flexDirection: "column",
           alignItems: "center",
           textAlign: "center",
+          backgroundColor: "#4dd0e1",
         }}
       >
-        <Tooltip title="Home Page">
+        <Tooltip>
           <IconButton size="small">
-            <Avatar sx={{ width: 32, height: 32 }}>M</Avatar>
+            <Avatar
+              sx={{
+                width: 32,
+                height: 32,
+                backgroundColor: "black",
+                mb: 1,
+                transition: ".5s",
+                "&:hover": {
+                  color: "white",
+                  backgroundColor: "#c51162",
+                  border: 0.5,
+                },
+              }}
+            >
+              M
+            </Avatar>
           </IconButton>
         </Tooltip>
-        <Typography sx={{ minWidth: 100 }}>About</Typography>
-        <Typography sx={{ minWidth: 100 }}>FAQ</Typography>
-        <Typography sx={{ minWidth: 100 }}>Contacts</Typography>
+        <Typography
+          sx={{
+            width: "100%",
+            padding: 1,
+            border: 1,
+            transition: "background 1s, color 1s",
+            "&:hover": {
+              color: "white",
+              backgroundColor: "#c51162",
+              border: 0.5,
+            },
+          }}
+        >
+          About
+        </Typography>
+        <Typography
+          sx={{
+            width: "100%",
+            padding: 1,
+            transition: "background 1s, color 1s",
+            "&:hover": {
+              color: "white",
+              backgroundColor: "#c51162",
+              border: 0.5,
+            },
+          }}
+        >
+          FAQ
+        </Typography>
+        <Typography
+          sx={{
+            width: "100%",
+            padding: 1,
+            border: 1,
+            transition: "background 1s, color 1s",
+            "&:hover": {
+              color: "white",
+              backgroundColor: "#c51162",
+              border: 0.5,
+            },
+          }}
+        >
+          Contacts
+        </Typography>
       </Box>
+
       <Box
         sx={{
           display: {
@@ -42,19 +100,76 @@ export const NavBar = () => {
             sm: "flex",
           },
           flexDirection: "row",
-          justifyContent: "space-evenly",
+          justifyContent: "center",
           alignItems: "center",
           textAlign: "center",
+          backgroundColor: "#4dd0e1",
+          cursor: "pointer",
         }}
       >
-        <Tooltip title="Home Page">
+        <Tooltip sx={{ mr: 2 }}>
           <IconButton size="small">
-            <Avatar sx={{ width: 32, height: 32 }}>M</Avatar>
+            <Avatar
+              sx={{
+                width: 32,
+                height: 32,
+                backgroundColor: "black",
+                transition: ".5s",
+                "&:hover": {
+                  color: "white",
+                  backgroundColor: "#c51162",
+                  border: 0.5,
+                },
+              }}
+            >
+              M
+            </Avatar>
           </IconButton>
         </Tooltip>
-        <Typography sx={{ minWidth: 100 }}>About</Typography>
-        <Typography sx={{ minWidth: 100 }}>FAQ</Typography>
-        <Typography sx={{ minWidth: 100 }}>Contacts</Typography>
+        <Typography
+          sx={{
+            minWidth: 100,
+            py: 1,
+            px: 0.5,
+            mx: 1,
+            borderRadius: 1,
+            transition: "background 1s, color 1s",
+            "&:hover": {
+              backgroundColor: "#b2ebf2",
+            },
+          }}
+        >
+          About
+        </Typography>
+        <Typography
+          sx={{
+            minWidth: 100,
+            py: 1,
+            px: 0.5,
+            mx: 1,
+            borderRadius: 1,
+            transition: "background 1s, color 1s",
+            "&:hover": {
+              backgroundColor: "#b2ebf2",
+            },
+          }}
+        >
+          FAQ
+        </Typography>
+        <Typography
+          sx={{
+            minWidth: 100,
+            p: 1,
+            borderRadius: 1,
+            transition: "background 1s, color 1s",
+            "&:hover": {
+              backgroundColor: "#b2ebf2",
+              border: 0.5,
+            },
+          }}
+        >
+          Contacts
+        </Typography>
       </Box>
     </React.Fragment>
   );
