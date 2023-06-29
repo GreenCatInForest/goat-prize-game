@@ -1,4 +1,6 @@
 import * as React from "react";
+import { useNavigate } from "react-router-dom";
+
 import Box from "@mui/material/Box";
 import Avatar from "@mui/material/Avatar";
 import IconButton from "@mui/material/IconButton";
@@ -6,9 +8,13 @@ import Typography from "@mui/material/Typography";
 import Tooltip from "@mui/material/Tooltip";
 
 export const NavBar = () => {
+  const navigate = useNavigate();
+
   return (
     <React.Fragment>
       <Box
+        // mobile screen
+
         sx={{
           display: {
             xs: "flex",
@@ -21,7 +27,12 @@ export const NavBar = () => {
         }}
       >
         <Tooltip>
-          <IconButton size="small">
+          <IconButton
+            size="small"
+            onClick={() => {
+              navigate("/");
+            }}
+          >
             <Avatar
               sx={{
                 width: 32,
@@ -41,6 +52,9 @@ export const NavBar = () => {
           </IconButton>
         </Tooltip>
         <Typography
+          onClick={() => {
+            navigate("/");
+          }}
           sx={{
             width: "100%",
             padding: 1,
@@ -70,6 +84,9 @@ export const NavBar = () => {
           FAQ
         </Typography>
         <Typography
+          onClick={() => {
+            navigate("/contacts");
+          }}
           sx={{
             width: "100%",
             padding: 1,
@@ -87,6 +104,8 @@ export const NavBar = () => {
       </Box>
 
       <Box
+        // desctop screen
+
         sx={{
           display: {
             xs: "none",
@@ -101,7 +120,12 @@ export const NavBar = () => {
         }}
       >
         <Tooltip sx={{ mr: 2 }}>
-          <IconButton size="small">
+          <IconButton
+            size="small"
+            onClick={() => {
+              navigate("/");
+            }}
+          >
             <Avatar
               sx={{
                 width: 32,
@@ -150,6 +174,9 @@ export const NavBar = () => {
           FAQ
         </Typography>
         <Typography
+          onClick={() => {
+            navigate("/contacts");
+          }}
           sx={{
             minWidth: 100,
             p: 1,

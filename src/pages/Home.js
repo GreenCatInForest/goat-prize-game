@@ -7,6 +7,7 @@ export const Home = () => {
   return (
     <div>
       <NavBar />
+      <div>Goats and Prizes</div>
       <Image src={goatFrontView} />
     </div>
   );
